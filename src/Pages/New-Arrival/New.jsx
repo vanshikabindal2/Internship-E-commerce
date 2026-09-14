@@ -18,14 +18,14 @@ const products=[
   },
   {
     id:3,
-    name:'premium Yellow Shirt',
+    name:'Premium Yellow Shirt',
     category:'Women',
     price:'1500',
     image:'https://cf-images.ap-southeast-1.prod.boltdns.net/v1/jit/5745608584001/5b958d0f-50ad-46c6-b52c-9cfd88d344f6/main/960x1280/9s269ms/match/image.jpg',
   },
   {
     id:4,
-    name:'premium Black Shirt',
+    name:'Premium Black Shirt',
     category:'Men',
     price:'1900',
     image:'https://rukminim2.flixcart.com/image/480/640/xif0q/shirt/7/j/0/l-black-lining-white-shirts-floura-original-imagh9bg6skzgtfv.jpeg?q=90',

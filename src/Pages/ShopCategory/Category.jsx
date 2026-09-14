@@ -1,20 +1,4 @@
-// import React from 'react'
-// import './Category.css'
-// const Category = () => {
-//   return (
-//     <div>
-//       <section className="hero-banner">
-//       <img
-//         src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/Shop_your_size_6474c313-d237-46ef-89b5-37d0efb94d55.jpg?v=1788332482"
-//         alt="Shop your size - Up to 30% off"
-//         className="hero-banner-image"
-//       />
-//     </section>
-//     </div>
-//   )
-// }
 
-// export default Category
 import React, { useEffect, useRef, useState } from "react";
 import "./Category.css";
 
@@ -31,9 +15,9 @@ const Category = () => {
         "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=1200&q=90",
     },
     {
-      title: "Snitch Luggage",
+      title: "Lining Shirts",
       image:
-        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=90",
+        "https://d2d5n4ft74bagm.cloudfront.net/media/shop-by-occasion/94f2ca26-a5f4-4a89-bee7-7fafff5ff91c/1789017914_desktop.jpeg?w=90",
     },
     {
       title: "Oversized T-Shirts",
