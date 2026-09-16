@@ -18,17 +18,17 @@ const products=[
   },
   {
     id:3,
-    name:'Premium Yellow Shirt',
-    category:'Women',
+    name:'Joggers',
+    category:' Men',
     price:'1500',
-    image:'https://cf-images.ap-southeast-1.prod.boltdns.net/v1/jit/5745608584001/5b958d0f-50ad-46c6-b52c-9cfd88d344f6/main/960x1280/9s269ms/match/image.jpg',
+    image:'https://veirdo.in/cdn/shop/files/Artboard7-2026-02-24T101409.960.jpg?v=1771908354',
   },
   {
     id:4,
-    name:'Premium Black Shirt',
+    name:'POPOVER SHIRTS',
     category:'Men',
     price:'1900',
-    image:'https://rukminim2.flixcart.com/image/480/640/xif0q/shirt/7/j/0/l-black-lining-white-shirts-floura-original-imagh9bg6skzgtfv.jpeg?q=90',
+    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTEzQPBqqgC53dA0Cbdh10thjdlFE0b0rhE66gomlf8xUIxymZZ15MJtY&s=10',
   },
   {
     id:5,

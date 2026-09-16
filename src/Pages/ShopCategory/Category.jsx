@@ -10,29 +10,29 @@ const Category = () => {
         "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1200&q=90",
     },
     {
-      title: "Floral Shirts",
+      title: "Joggers",
       image:
-        "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=1200&q=90",
+        "https://assets.myntassets.com/w_412,q_50,,dpr_3,fl_progressive,f_webp/assets/images/2026/JANUARY/9/Nrh1F835_893e9deffb85407184e2c0a3105a4f94.jpg",
+    },
+    {
+      title: "POPOVER SHIRTS",
+      image:
+      "https://cdn.shopify.com/s/files/1/0948/5818/files/Screen_Shot_2017-10-24_at_6.09.19_PM.jpg?v=1508934730"
     },
     {
       title: "Lining Shirts",
       image:
-        "https://d2d5n4ft74bagm.cloudfront.net/media/shop-by-occasion/94f2ca26-a5f4-4a89-bee7-7fafff5ff91c/1789017914_desktop.jpeg?w=90",
+        "https://www.powerlook.in/cdn/shop/files/4_6cb4ff85-38d6-42fa-ac28-2f99900036bd.jpg?v=1783500860&width=810",
     },
     {
-      title: "Oversized T-Shirts",
+      title: "Joggers",
       image:
-        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=90",
+        "https://tigc.in/cdn/shop/files/0824-DT-JOG-7-7_8.jpg?v=1778742656&width=360",
     },
     {
-      title: "Premium Jackets",
+      title: "Shirt",
       image:
-        "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=1200&q=90",
-    },
-    {
-      title: "Streetwear",
-      image:
-        "https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1200&q=90",
+        "https://m.media-amazon.com/images/I/81zFP+zIIuL._AC_UY1100_.jpg",
     },
   ];
 
