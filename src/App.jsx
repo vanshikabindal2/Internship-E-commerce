@@ -12,11 +12,13 @@ import Shirts from "./Pages/Shirts/Shirts.jsx";
 import PopoverShirt from "./Pages/PopoverShirt/Popover.jsx";
 import Joggers from "./Pages/Joggers/Joggers.jsx";
 import ProductDetail from "./Pages/ProductDetail/ProductDetail.jsx";
+import Cart from "./Pages/Cart/Cart.jsx";
+import Wishtlist from "./Pages/Wishtlist/Wishtlist.jsx";
 const App = () => {
   return (
     <>
       <Nav />
-
+<div className="page-contentts">
       <Routes>
         <Route
           path="/"
@@ -37,8 +39,13 @@ const App = () => {
         <Route path="/popover-shirts" element={<PopoverShirt />} />
         <Route path="/joggers" element={<Joggers />} />
         <Route path="/product/:id" element={<ProductDetail />}/>
-      </Routes>
+        <Route path="/product/:productId"element={<ProductDetail />}/>
+          <Route path="/cart" element={<Cart />} />
+                    <Route path="/wishlist" element={<Wishtlist />} />
 
+
+      </Routes>
+</div>
       <Footer />
     </>
   );

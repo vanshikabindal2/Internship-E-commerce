@@ -6,7 +6,7 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
-import logo from "../../assets/logo.jpeg"
+import logo from "../../assets/logo.png"
 import Fb from "../FooterBanner/Fb";
 import "./Footer.css";
 
@@ -116,11 +116,10 @@ const Footer = () => {
 
           <h4>SHOP</h4>
 
-          <a href="#women">Women</a>
-          <a href="#men">Men</a>
-          <a href="#trending">Trending</a>
-          <a href="#new">New Arrivals</a>
-          <a href="#sale">Sale</a>
+          <a href="#women">Shirt</a>
+          <a href="#men">Popovers Shirt</a>
+          <a href="#trending">Joggers</a>
+          
 
         </div>
 

@@ -2,13 +2,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ShoppingBag, Heart } from "lucide-react";
-
+import "./Shirts.css";
 
 import { products } from "../../assets/assets";
 
-const Joggers = () => {
+const Shirts = () => {
   const navigate = useNavigate();
-const joggerProducts=products.filter((product)=>product.subCategory==='Jogger')
+  const PanttProducts=products.filter((product)=>product.subCategory==='Shirts')
+  
   return (
     <div className="shirts-page">
 
@@ -17,14 +18,14 @@ const joggerProducts=products.filter((product)=>product.subCategory==='Jogger')
 
         {/* HEADING */}
         <div className="shirts-heading">
-          <h1>Joggers</h1>
-          <p>Explore our premium collection of Joggers</p>
+          <h1>SHIRTS</h1>
+          <p>Explore our premium collection of shirts</p>
         </div>
 
         {/* PRODUCTS GRID */}
         <div className="products-grid">
 
-          {joggerProducts.map((product) => (
+          {shirtProducts.map((product) => (
 
             <div
               className="product-card"
@@ -73,17 +74,17 @@ const joggerProducts=products.filter((product)=>product.subCategory==='Jogger')
               </div>
 
               {/* ================= PRODUCT INFO ================= */}
-              <div className="product-info">
+             <div className="product-info">
 
-                <h3>{product.name}</h3>
+  <div className="product-info-row">
+    <h3>{product.name}</h3>
 
-                <div className="price-row">
-                  <span className="product-price">
-                    ₹{product.price}
-                  </span>
-                </div>
+    <span className="product-price">
+      ₹{product.price}
+    </span>
+  </div>
 
-              </div>
+             </div>
 
             </div>
 
@@ -97,4 +98,4 @@ const joggerProducts=products.filter((product)=>product.subCategory==='Jogger')
   );
 };
 
-export default Joggers;
+export default Shirts;

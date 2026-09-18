@@ -27,3 +27,11 @@ body {
 body {
   min-width: 100%;
 }
+.page-contentts {
+  padding-top: 78px;
+}
+@media (max-width: 700px) {
+  .page-contentts {
+    padding-top: 68px;
+  }
+}

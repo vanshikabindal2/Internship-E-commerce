@@ -183,7 +183,7 @@
 }
 
 .wishlist-btn.liked {
-  color: #111;
+  color: #d71111;
 }
 
 
@@ -927,4 +927,50 @@
   100% {
     transform: scale(1);
   }
+}
+.quantity-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 22px 0;
+}
+
+.quantity-section > span {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
+
+.quantity-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  height: 42px;
+}
+
+.quantity-box button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.quantity-box button:hover {
+  background: #f5f5f5;
+}
+
+.quantity-box button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.quantity-box > span {
+  min-width: 40px;
+  text-align: center;
+  font-size: 14px;
 }

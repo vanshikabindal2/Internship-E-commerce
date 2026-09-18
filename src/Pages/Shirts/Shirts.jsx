@@ -1,74 +1,90 @@
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { ShoppingBag } from "lucide-react";
+import { ShoppingBag, Heart } from "lucide-react";
 import "./Shirts.css";
 
-import Banner2 from "../../assets/Banner2.png";
 import { products } from "../../assets/assets";
 
 const Shirts = () => {
   const navigate = useNavigate();
-
+  const shirtProducts=products.filter((product)=>product.subCategory==='Shirts')
+  
   return (
     <div className="shirts-page">
-
-      {/* ================= BANNER ================= */}
-      {/* <section className="shirt-banner">
-        <img src={Banner2} alt="Shirts Collection" />
-      </section> */}
 
       {/* ================= PRODUCTS ================= */}
       <section className="shirts-products">
 
+        {/* HEADING */}
         <div className="shirts-heading">
           <h1>SHIRTS</h1>
           <p>Explore our premium collection of shirts</p>
         </div>
 
+        {/* PRODUCTS GRID */}
         <div className="products-grid">
 
-          {products.map((shirt) => (
+          {shirtProducts.map((product) => (
 
             <div
               className="product-card"
-              key={shirt._id}
-              onClick={() => navigate(`/product/${shirt._id}`)}
+              key={product._id}
+              onClick={() => navigate(`/product/${product._id}`)}
             >
 
-              {/* IMAGE */}
+              {/* ================= IMAGE ================= */}
               <div className="product-image">
 
                 <img
-                  src={shirt.image[0]}
-                  alt={shirt.name}
+                  src={product.image[0]}
+                  alt={product.name}
                 />
 
-               
-
+                {/* HEART */}
                 <button
+                  type="button"
+                  className="quick-heart"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                  }}
+                  aria-label="Add to wishlist"
+                >
+                  <Heart
+                    size={19}
+                    strokeWidth={1.6}
+                  />
+                </button>
+
+                {/* SHOPPING BAG */}
+                <button
+                  type="button"
                   className="quick-cart"
                   onClick={(e) => {
                     e.stopPropagation();
                   }}
+                  aria-label="Add to cart"
                 >
-                  <ShoppingBag size={19} strokeWidth={1.6} />
+                  <ShoppingBag
+                    size={19}
+                    strokeWidth={1.6}
+                  />
                 </button>
 
               </div>
 
-              {/* ONLY NAME + PRICE */}
-              <div className="product-info">
+              {/* ================= PRODUCT INFO ================= */}
+             <div className="product-info">
 
-                <h3>{shirt.name}</h3>
+  <div className="product-info-row">
+    <h3>{product.name}</h3>
 
-                <div className="price-row">
-                  <span className="product-price">
-                    ₹{shirt.price}
-                  </span>
+    <span className="product-price">
+      ₹{product.price}
+    </span>
+  </div>
 
-                </div>
-
-              </div>
+             </div>
 
             </div>
 

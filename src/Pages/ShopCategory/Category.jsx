@@ -4,10 +4,10 @@ import "./Category.css";
 
 const Category = () => {
   const categories = [
-    {
-      title: "Technical Shirts",
+     {
+      title: "Lining Shirts",
       image:
-        "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1200&q=90",
+        "https://www.powerlook.in/cdn/shop/files/4_6cb4ff85-38d6-42fa-ac28-2f99900036bd.jpg?v=1783500860&width=810",
     },
     {
       title: "Joggers",
@@ -17,23 +17,15 @@ const Category = () => {
     {
       title: "POPOVER SHIRTS",
       image:
-      "https://cdn.shopify.com/s/files/1/0948/5818/files/Screen_Shot_2017-10-24_at_6.09.19_PM.jpg?v=1508934730"
+      "https://i.pinimg.com/736x/10/a1/9c/10a19cd43851ae6f364f2aef4d7f420c.jpg"
     },
+   
     {
-      title: "Lining Shirts",
+      title: "Lining Pant",
       image:
-        "https://www.powerlook.in/cdn/shop/files/4_6cb4ff85-38d6-42fa-ac28-2f99900036bd.jpg?v=1783500860&width=810",
+        "https://i.pinimg.com/736x/44/80/43/448043b37b81c58490bff806aacba780.jpg",
     },
-    {
-      title: "Joggers",
-      image:
-        "https://tigc.in/cdn/shop/files/0824-DT-JOG-7-7_8.jpg?v=1778742656&width=360",
-    },
-    {
-      title: "Shirt",
-      image:
-        "https://m.media-amazon.com/images/I/81zFP+zIIuL._AC_UY1100_.jpg",
-    },
+   
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
