@@ -153,7 +153,7 @@ HOME            </Link>
               JOGGERS
             </Link>
             <Link to="/pant">
-              Pants
+              PANTS
             </Link>
           </nav>
 
@@ -250,7 +250,7 @@ HOME            </Link>
                 setMenuOpen(false)
               }
             >
-              SHIRTS
+              Shirts
             </Link>
 
             <Link
@@ -259,7 +259,7 @@ HOME            </Link>
                 setMenuOpen(false)
               }
             >
-              POPOVER SHIRTS
+          Popover Shirts
             </Link>
 
             <Link
@@ -268,7 +268,7 @@ HOME            </Link>
                 setMenuOpen(false)
               }
             >
-              JOGGERS
+             Joggers
             </Link>
  <Link
               to="/Pants"

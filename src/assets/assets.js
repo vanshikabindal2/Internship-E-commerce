@@ -34,7 +34,7 @@ export const products = [
     fit: "Regular Fit",
     stock: 20,
     bestseller: true,
-    isNew: true,
+    isNew: false,
   },
 
   {
@@ -69,6 +69,8 @@ export const products = [
     fit: "Relaxed Fit",
     stock: 12,
     bestseller: false,
+        isNew: true,
+
   },
 
   {
@@ -89,7 +91,7 @@ export const products = [
   },
   {
     _id: "jogger001",
-    name: "Premium Jogger",
+    name: "Premium Pant",
     description:
       "Premium joggers designed for effortless comfort, style, and everyday movement.",
     price: 1129,
@@ -134,7 +136,7 @@ export const products = [
     fabric: "Cotton Linen",
     fit: "Regular Fit",
     stock: 18,
-       isNew: true,
+     
 
   },
   {
@@ -150,7 +152,7 @@ export const products = [
     fabric: "Cotton Linen",
     fit: "Regular Fit",
     stock: 18,
-   
+   isNew: true,
   },
  {
     _id: "popover001",
@@ -165,11 +167,11 @@ export const products = [
     fabric: "Cotton Linen",
     fit: "Regular Fit",
     stock: 18,
-   
+     
   },
    {
     _id: "popover002",
-    name: "New Look Jogger",
+    name: "New Look Popover",
     description: "Refined popover shirt made for everyday comfort, clean looks, and effortless movement.",
     price: 1999,
     image: [p2],
@@ -180,7 +182,8 @@ export const products = [
     fabric: "Cotton Linen",
     fit: "Regular Fit",
     stock: 18,
-   
+         
+
 
    
   },
@@ -201,7 +204,7 @@ export const products = [
   },
   {
     _id: "popover004",
-    name: "New Look Jogger",
+    name: "Popover Shirt",
     description: "Refined popover shirt made for everyday comfort, clean looks, and effortless movement.",
     price: 1999,
     image: [p4],

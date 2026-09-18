@@ -5,12 +5,12 @@ import "./Category.css";
 const Category = () => {
   const categories = [
      {
-      title: "Lining Shirts",
+      title: "LINEN SHIRTS",
       image:
         "https://www.powerlook.in/cdn/shop/files/4_6cb4ff85-38d6-42fa-ac28-2f99900036bd.jpg?v=1783500860&width=810",
     },
     {
-      title: "Joggers",
+      title: "JOGGERS",
       image:
         "https://assets.myntassets.com/w_412,q_50,,dpr_3,fl_progressive,f_webp/assets/images/2026/JANUARY/9/Nrh1F835_893e9deffb85407184e2c0a3105a4f94.jpg",
     },
@@ -21,7 +21,7 @@ const Category = () => {
     },
    
     {
-      title: "Lining Pant",
+      title: "LINEN TROUSERS",
       image:
         "https://i.pinimg.com/736x/44/80/43/448043b37b81c58490bff806aacba780.jpg",
     },
