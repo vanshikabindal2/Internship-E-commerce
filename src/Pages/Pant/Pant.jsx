@@ -2,13 +2,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ShoppingBag, Heart } from "lucide-react";
-import "./Shirts.css";
 
 import { products } from "../../assets/assets";
 
 const Shirts = () => {
   const navigate = useNavigate();
-  const PanttProducts=products.filter((product)=>product.subCategory==='Shirts')
+  const PantProducts=products.filter((product)=>product.subCategory==='pant')
   
   return (
     <div className="shirts-page">
@@ -18,14 +17,14 @@ const Shirts = () => {
 
         {/* HEADING */}
         <div className="shirts-heading">
-          <h1>SHIRTS</h1>
-          <p>Explore our premium collection of shirts</p>
+          <h1>Pants</h1>
+          <p>Explore our premium collection of Pants</p>
         </div>
 
         {/* PRODUCTS GRID */}
         <div className="products-grid">
 
-          {shirtProducts.map((product) => (
+          {PantProducts.map((product) => (
 
             <div
               className="product-card"

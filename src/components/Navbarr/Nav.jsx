@@ -152,7 +152,7 @@ HOME            </Link>
             <Link to="/joggers">
               JOGGERS
             </Link>
-            <Link to="/joggers">
+            <Link to="/pant">
               Pants
             </Link>
           </nav>

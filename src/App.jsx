@@ -14,6 +14,9 @@ import Joggers from "./Pages/Joggers/Joggers.jsx";
 import ProductDetail from "./Pages/ProductDetail/ProductDetail.jsx";
 import Cart from "./Pages/Cart/Cart.jsx";
 import Wishtlist from "./Pages/Wishtlist/Wishtlist.jsx";
+import Pant from "./Pages/Pant/Pant.jsx";
+
+
 const App = () => {
   return (
     <>
@@ -43,6 +46,7 @@ const App = () => {
           <Route path="/cart" element={<Cart />} />
                     <Route path="/wishlist" element={<Wishtlist />} />
 
+                    <Route path="/pant" element={<Pant />} />
 
       </Routes>
 </div>

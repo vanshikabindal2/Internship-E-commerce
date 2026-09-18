@@ -7,25 +7,22 @@
   height: 78px;
   background: #fff;
   border-bottom: 1px solid #eee;
-
   position: fixed;
   top: 0;
   left: 0;
-
   z-index: 9999;
 }
-
 
 .navbar-inner {
   width: 100%;
   height: 100%;
-
   padding: 0 42px;
 
   display: flex;
   align-items: center;
 
   position: relative;
+  box-sizing: border-box;
 }
 
 
@@ -36,16 +33,13 @@
 .navbar-logo {
   display: flex;
   align-items: center;
-
   flex-shrink: 0;
-
   text-decoration: none;
 }
 
 .navbar-logo img {
   width: 150px;
   height: auto;
-
   display: block;
 }
 
@@ -55,15 +49,11 @@
 ========================================================= */
 
 .desktop-nav {
-  position: absolute;
-
-  left: 50%;
-  top: 50%;
-
-  transform: translate(-50%, -50%);
-
   display: flex;
   align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
 
   gap: 48px;
 }
@@ -72,14 +62,11 @@
   position: relative;
 
   color: #151515;
-
   text-decoration: none;
 
   font-family: Arial, Helvetica, sans-serif;
-
   font-size: 13px;
   font-weight: 500;
-
   letter-spacing: 0.3px;
 
   white-space: nowrap;
@@ -89,7 +76,6 @@
   content: "";
 
   position: absolute;
-
   left: 0;
   bottom: -7px;
 
@@ -133,7 +119,6 @@
   padding: 0 13px;
 
   border: 1px solid #dedede;
-
   background: #fafafa;
 
   display: flex;
@@ -145,6 +130,8 @@
 
   cursor: pointer;
 
+  box-sizing: border-box;
+
   transition:
     border-color 0.25s ease,
     background 0.25s ease;
@@ -152,14 +139,13 @@
 
 .nav-search:hover {
   border-color: #bcbcbc;
-  background: #ffffff;
+  background: #fff;
 }
 
 .nav-search span {
   font-family: Arial, Helvetica, sans-serif;
 
   font-size: 13px;
-
   color: #777;
 
   white-space: nowrap;
@@ -203,7 +189,7 @@
 
 
 /* =========================================================
-   COUNT
+   CART COUNT
 ========================================================= */
 
 .cart-count {
@@ -220,7 +206,7 @@
   border-radius: 50%;
 
   background: #151515;
-  color: #ffffff;
+  color: #fff;
 
   font-size: 8px;
   font-weight: 600;
@@ -228,6 +214,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  box-sizing: border-box;
 }
 
 
@@ -274,7 +262,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-
   top: 78px;
 
   z-index: 1998;
@@ -309,7 +296,7 @@
 
   width: min(1100px, calc(100% - 80px));
 
-  background: #ffffff;
+  background: #fff;
 
   z-index: 1999;
 
@@ -317,8 +304,7 @@
 
   overflow: hidden;
 
-  box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.16);
 
   animation: dropdownShow 0.25s ease;
 }
@@ -350,7 +336,9 @@
 
   gap: 15px;
 
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
+
+  box-sizing: border-box;
 }
 
 .search-main-input {
@@ -368,6 +356,8 @@
   padding: 0 13px;
 
   color: #151515;
+
+  box-sizing: border-box;
 }
 
 .search-main-input input {
@@ -416,7 +406,7 @@
 
 
 /* =========================================================
-   CLOSE
+   CLOSE BUTTON
 ========================================================= */
 
 .search-close-btn {
@@ -464,7 +454,9 @@
 .search-left {
   padding: 27px 30px;
 
-  border-right: 1px solid #eeeeee;
+  border-right: 1px solid #eee;
+
+  box-sizing: border-box;
 }
 
 .search-section {
@@ -478,7 +470,6 @@
   font-family: Arial, Helvetica, sans-serif;
 
   font-size: 16px;
-
   font-weight: 500;
 
   color: #172033;
@@ -491,14 +482,13 @@
 
 .recent-search {
   width: fit-content;
-
   min-width: 170px;
 
   padding: 10px 13px;
 
   border: 1px solid #e2e2e2;
 
-  background: #ffffff;
+  background: #fff;
 
   display: flex;
   align-items: center;
@@ -526,20 +516,17 @@
 
 .trending-searches {
   display: flex;
-
   flex-direction: column;
 }
 
 .trending-searches button {
   width: 100%;
-
   height: 40px;
 
   padding: 0 8px;
 
   border: none;
-
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
 
   background: transparent;
 
@@ -562,7 +549,6 @@
 
 .trending-searches button:hover {
   color: #111;
-
   padding-left: 13px;
 }
 
@@ -585,6 +571,8 @@
   padding: 27px 28px;
 
   overflow: hidden;
+
+  box-sizing: border-box;
 }
 
 .search-right-heading {
@@ -607,7 +595,7 @@
 
 
 /* =========================================================
-   PRODUCTS
+   SEARCH PRODUCTS
 ========================================================= */
 
 .search-products {
@@ -646,8 +634,7 @@
   transition: transform 0.45s ease;
 }
 
-.search-product:hover
-.search-product-image img {
+.search-product:hover .search-product-image img {
   transform: scale(1.045);
 }
 
@@ -674,7 +661,6 @@
   display: -webkit-box;
 
   -webkit-line-clamp: 2;
-
   -webkit-box-orient: vertical;
 
   overflow: hidden;
@@ -707,7 +693,7 @@
   width: 28px;
   height: 28px;
 
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 
   border-radius: 50%;
 
@@ -724,12 +710,12 @@
 
 .search-product:hover .product-arrow {
   background: #111;
-  color: #ffffff;
+  color: #fff;
 }
 
 
 /* =========================================================
-   NO RESULT
+   NO SEARCH RESULT
 ========================================================= */
 
 .no-search-result {
@@ -746,32 +732,156 @@
 
 
 /* =========================================================
-   TABLET
+   TABLET / SMALL DESKTOP
+   701px - 1100px
 ========================================================= */
 
-@media (max-width: 1000px) {
+@media (min-width: 701px) and (max-width: 1100px) {
+
+  .navbar {
+    height: 74px;
+  }
 
   .navbar-inner {
-    padding: 0 25px;
+    height: 74px;
+
+    padding: 0 24px;
   }
+
+
+  /* LOGO */
+
+  .navbar-logo img {
+    width: 125px;
+  }
+
+
+  /* NAV */
 
   .desktop-nav {
-    gap: 28px;
+    position: static;
+
+    transform: none;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    gap: 24px;
   }
 
+  .desktop-nav a {
+    font-size: 12px;
+
+    letter-spacing: 0.2px;
+  }
+
+
+  /* ACTIONS */
+
+  .navbar-actions {
+    margin-left: 0;
+
+    gap: 8px;
+  }
+
+
+  /* SEARCH */
+
   .nav-search {
-    width: 190px;
+    width: 165px;
+    height: 40px;
+
+    padding: 0 11px;
+  }
+
+  .nav-search span {
+    font-size: 12px;
+  }
+
+
+  /* ICONS */
+
+  .nav-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* SEARCH DROPDOWN */
+
+  .search-backdrop {
+    top: 74px;
   }
 
   .search-dropdown {
-    width: calc(100% - 40px);
+    top: 74px;
+
+    width: calc(100% - 48px);
   }
 
+  .search-content {
+    grid-template-columns: 35% 65%;
+  }
+
+  .search-products {
+    gap: 12px;
+  }
+
+  .search-product-image {
+    height: 200px;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   701px - 850px
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 850px) {
+
+  .navbar-inner {
+    padding: 0 16px;
+  }
+
+  .navbar-logo img {
+    width: 110px;
+  }
+
+  .desktop-nav {
+    gap: 16px;
+  }
+
+  .desktop-nav a {
+    font-size: 11px;
+  }
+
+  .navbar-actions {
+    gap: 4px;
+  }
+
+  .nav-search {
+    width: 135px;
+  }
+
+  .nav-search span {
+    font-size: 11px;
+  }
+
+  .nav-icon {
+    width: 28px;
+  }
 }
 
 
 /* =========================================================
    MOBILE
+   700px AND BELOW
 ========================================================= */
 
 @media (max-width: 700px) {
@@ -816,7 +926,7 @@
   }
 
 
-  /* SEARCH ICON ONLY */
+  /* SEARCH ICON */
 
   .nav-search {
     width: 28px;
@@ -851,7 +961,7 @@
   }
 
 
-  /* COUNT */
+  /* CART COUNT */
 
   .cart-count {
     top: -1px;
@@ -890,12 +1000,11 @@
 
     width: 100%;
 
-    background: #ffffff;
+    background: #fff;
 
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
 
     opacity: 0;
-
     visibility: hidden;
 
     transform: translateY(-10px);
@@ -908,7 +1017,6 @@
 
   .mobile-menu.active {
     opacity: 1;
-
     visibility: visible;
 
     transform: translateY(0);
@@ -916,7 +1024,6 @@
 
   .mobile-menu nav {
     display: flex;
-
     flex-direction: column;
   }
 
@@ -930,18 +1037,20 @@
     text-decoration: none;
 
     font-size: 13px;
-
     font-weight: 500;
 
     letter-spacing: 0.5px;
   }
 
 
-  /* SEARCH */
+  /* SEARCH BACKDROP */
 
   .search-backdrop {
     top: 68px;
   }
+
+
+  /* SEARCH DROPDOWN */
 
   .search-dropdown {
     top: 68px;
@@ -972,7 +1081,6 @@
       opacity: 1;
       transform: translateY(0);
     }
-
   }
 
 
@@ -1007,7 +1115,7 @@
 
     border-right: none;
 
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
   }
 
   .search-section {
@@ -1033,12 +1141,12 @@
   .search-product-image {
     height: 220px;
   }
-
 }
 
 
 /* =========================================================
    SMALL MOBILE
+   400px AND BELOW
 ========================================================= */
 
 @media (max-width: 400px) {
@@ -1075,7 +1183,6 @@
   .search-product-image {
     height: 190px;
   }
-
 }
 
 
